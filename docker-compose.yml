@@ -1,0 +1,10 @@
+services:
+  node:
+    container_name: pokedex-node
+    image: node:24.11.1
+    working_dir: /var/www
+    volumes:
+      - ./api:/var/www
+    ports:
+      - "8000:8000" 
+    command: sh -c "npm install && npm run dev"

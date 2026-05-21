@@ -1,0 +1,5 @@
+# Dependencies
+/api/node_modules
+
+# Environment variables
+/api/.env 
