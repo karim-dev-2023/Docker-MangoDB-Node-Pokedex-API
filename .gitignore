@@ -4,3 +4,6 @@
 # Environment variables
 /api/.env 
 /api/src/config/db.js
+
+# MangoDB data
+/mongo/

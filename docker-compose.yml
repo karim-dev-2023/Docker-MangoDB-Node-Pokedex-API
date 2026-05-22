@@ -1,4 +1,12 @@
 services:
+  database-mongo:
+    image: mongo:latest
+    container_name: pokedex-mongo
+    volumes:
+      - ./mongo:/data/db
+    ports:
+      - "27017:27017" 
+
   node:
     container_name: pokedex-node
     image: node:24.11.1
